@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './components/About';
-import './components/Shop';
+import '/components/About';
+import '/components/Shop';
+import '/components/Nav';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>App</h1>
+      {/* <Nav /> */}
       <About />
       <Shop />
     </div>
