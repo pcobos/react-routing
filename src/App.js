@@ -10,6 +10,7 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
+          {/* exact keyword specifies the exact path */}
           <Route path="/" exact component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/shop" component={Shop}/>
