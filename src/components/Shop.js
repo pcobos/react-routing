@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import React, { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const Shop = () => {
     <div>
       <h1>Shop</h1>
       {cards.map(card => (
-        <Link><h1>{card.name}</h1></Link>
+        <Link to={`/shop/${card.id}`}><h1>{card.name}</h1></Link>
       ))}
     </div>
   )
