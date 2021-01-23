@@ -23,7 +23,11 @@ const Shop = () => {
     <div>
       <h1>Shop</h1>
       {cards.map(card => (
-        <Link to={`/shop/${card.id}`}><h1>{card.name}</h1></Link>
+        <h1 key={card.id}>
+          <Link to={`/shop/${card.id}`}>
+            {card.name}
+          </Link>
+        </h1>
       ))}
     </div>
   )
